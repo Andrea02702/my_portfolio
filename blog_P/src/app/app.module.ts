@@ -16,6 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet'; 
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { CardNewsComponent } from './components/card-news/card-news.component';
+import { CardImgComponent } from './components/card-img/card-img.component';
 
 
 
@@ -29,6 +30,7 @@ import { CardNewsComponent } from './components/card-news/card-news.component';
     ContattiComponent,
     NavbarComponent,
     CardNewsComponent,
+    CardImgComponent,
     
     
   ],
