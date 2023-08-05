@@ -8,6 +8,15 @@ import { NovitaComponent } from './components/novita/novita.component';
 import { GalleriaComponent } from './components/galleria/galleria.component';
 import { ChiSonoComponent } from './components/chi-sono/chi-sono.component';
 import { ContattiComponent } from './components/contatti/contatti.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {MatMenuModule} from '@angular/material/menu'; 
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet'; 
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { CardNewsComponent } from './components/card-news/card-news.component';
+
 
 
 @NgModule({
@@ -18,11 +27,20 @@ import { ContattiComponent } from './components/contatti/contatti.component';
     GalleriaComponent,
     ChiSonoComponent,
     ContattiComponent,
+    NavbarComponent,
+    CardNewsComponent,
+    
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    MatBottomSheetModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
