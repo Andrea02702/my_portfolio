@@ -5,6 +5,7 @@ import { ChiSonoComponent } from './components/chi-sono/chi-sono.component';
 import { ContattiComponent } from './components/contatti/contatti.component';
 import { GalleriaComponent } from './components/galleria/galleria.component';
 import { NovitaComponent } from './components/novita/novita.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'chi-sono', component:ChiSonoComponent},
   {path:'galleria', component:GalleriaComponent},
   {path:'novita', component:NovitaComponent},
+  {path:'admin', component:AdminComponent}
   
 ];
 

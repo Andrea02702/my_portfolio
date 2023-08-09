@@ -17,6 +17,11 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { CardNewsComponent } from './components/card-news/card-news.component';
 import { CardImgComponent } from './components/card-img/card-img.component';
+import { AdminComponent } from './components/admin/admin.component';
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatSelectModule} from '@angular/material/select'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -31,6 +36,10 @@ import { CardImgComponent } from './components/card-img/card-img.component';
     NavbarComponent,
     CardNewsComponent,
     CardImgComponent,
+    AdminComponent,
+    
+    
+    
     
     
   ],
@@ -43,6 +52,16 @@ import { CardImgComponent } from './components/card-img/card-img.component';
     MatButtonModule,
     MatBottomSheetModule,
     MatButtonToggleModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    FormsModule,
+  
+    
+
+    
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
