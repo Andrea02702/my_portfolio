@@ -1,0 +1,7 @@
+{
+    "/*":{
+        "target":"http://localhost:3000/contact/",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}

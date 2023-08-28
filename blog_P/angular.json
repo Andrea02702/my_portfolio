@@ -73,6 +73,8 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "blog_P:build"
+            
+
           }
         },
         "test": {

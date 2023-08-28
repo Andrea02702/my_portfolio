@@ -1,18 +1,18 @@
 
 
 
-  
 
 
 
-
-<div class="flex items-center justify-center p-12">
+<div class="flex  items-center justify-center pb-52 px-7 py-10">
 
    <!--Author: FormBold Team -->
   <!-- Learn More: https://formbold.com -->
   <div class="mx-auto w-full max-w-[550px]">
-    <form action="https://formbold.com/s/FORM_ID" #formcon="ngForm" (ngSubmit)="onSubmit(formcon)" method="POST">
+    <form   [formGroup]="userForm" (ngSubmit)="onSubmit()" method="POST">
       <div class="mb-5">
+        <div *ngIf="confmsgshow"><p class="text-green-500" >{{ confmsg }}</p></div>
+        <div *ngIf="confmsgshow"><p class="text-red-700" >{{ nonconf }}</p></div>
 
         
         <label
@@ -26,6 +26,7 @@
           name="name"
           id="name"
           placeholder="Full Name"
+          formControlName="name"
           class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           ngModel
         />
@@ -45,6 +46,7 @@
           name="email"
           id="email"
           placeholder="example@domain.com"
+          formControlName="email"
           class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           ngModel
         />
@@ -62,10 +64,14 @@
           name="message"
           id="message"
           placeholder="Type your message"
+          formControlName="text"
+          maxlength="200"
           class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
           ngModel
+          
         ></textarea>
       </div>
+      
       <div>
         <button
           class="hover:shadow-form rounded-md bg-green-800 py-3 px-8 text-base font-semibold text-white outline-none"
@@ -78,6 +84,8 @@
 </div>
 
 
+
+<app-footer></app-footer>
 
 
 

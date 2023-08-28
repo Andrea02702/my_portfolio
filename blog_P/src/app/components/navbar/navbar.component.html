@@ -1,0 +1,94 @@
+<nav class="flex items-center bg-transparent p-4 flex-wrap">
+   
+    <a routerLink="">
+      <span class="text-xl text-green-600 font-bold uppercase tracking-wide"
+        >Picchio</span
+      >
+    </a>
+  
+  
+    <div class="text-green-100 inline-flex p-2  rounded lg:hidden ml-auto hover:text-black outline-none nav-toggler  ">
+  
+      <button mat-button [matMenuTriggerFor]="menu" ><i class="material-icons text-green-600">menu</i></button>
+    <!--nuv_Button-->
+    <mat-menu #menu="matMenu">
+  
+      <button mat-menu-item> 
+        <a
+          routerLink=""
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-950 font-bold text-xl items-center justify-center hover:bg-gray-500 text-center">
+          <span>dashboard</span>
+        </a>
+      </button>
+  
+      <button mat-menu-item> 
+        <a
+          routerLink="galleria"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  text-green-950 font-bold text-xl items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>galleria</span>
+        </a>
+      </button>
+  
+      <button mat-menu-item> 
+        <a routerLink="chi-sono"><p class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-950 font-bold text-xl items-center justify-center hover:bg-gray-500 text-center">chi sono</p></a>
+      </button>
+  
+      <button mat-menu-item> 
+        <a
+          routerLink="contatti"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded  text-green-950 font-bold text-xl items-center justify-center hover:bg-gray-900 hover:text-white">
+          <span>contattami</span>
+        </a>
+      </button>
+  
+      
+  
+    </mat-menu>
+  
+    </div>
+    
+  
+  
+  
+  
+  
+   
+  
+    <div
+      class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+      id="navigation"
+    >
+      <div
+        class="lg:inline-flex lg:flex-row sm:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto"
+      >
+        <a
+          routerLink=""
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-600 items-center justify-center  hover:bg-green-900 hover:text-white"
+        >
+          <span>dashboard</span>
+        </a>
+     
+        <a
+          routerLink="galleria"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-600 items-center justify-center  hover:bg-green-900 hover:text-white"
+        >
+          <span>galleria</span>
+        </a>
+        <a
+          routerLink="chi-sono"
+          class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-600 items-center justify-center hover:bg-green-900 hover:text-white"
+        >
+          <span>chi sono</span>
+        </a>
+  
+        <a
+        routerLink="contatti"
+        class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-green-600 items-center justify-center hover:bg-green-900 hover:text-white"
+      >
+        <span>contattami</span>
+      </a>
+      
+      </div>
+    </div>
+  </nav>
+  
